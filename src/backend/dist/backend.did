@@ -1,0 +1,38 @@
+type PolaroidMemory = 
+ record {
+   caption: text;
+   dateLabel: text;
+   photoKey: text;
+ };
+type GiftKind = 
+ variant {
+   loveLetter;
+   polaroidMemories;
+   reasonsILoveYou;
+ };
+type GiftContent = 
+ variant {
+   loveLetter: record {"text": text;};
+   polaroidMemories: record {memories: vec PolaroidMemory;};
+   reasonsILoveYou: record {reasons: vec text;};
+ };
+service : {
+  getGift: (kind: GiftKind) -> (GiftContent) query;
+  getGreeting: () -> (record {
+                        couplePhotoKey: text;
+                        name: text;
+                      }) query;
+  setBirthdayPhotoKey: (key: text) -> ();
+  setBoyfriendName: (name: text) -> ();
+  setCouplePhotoKey: (key: text) -> ();
+  setLoveLetter: ("text": text) -> ();
+  setLoveMessage: (message: text) -> ();
+  setPasscode: (code: text) -> ();
+  setPolaroidMemories: (memories: vec PolaroidMemory) -> ();
+  setReasonsILoveYou: (reasons: vec text) -> ();
+  verifyPasscode: (attempt: text) ->
+   (opt record {
+          birthdayPhotoKey: text;
+          loveMessage: text;
+        });
+}

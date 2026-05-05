@@ -1,0 +1,21 @@
+{
+  "overview": "A romantic birthday surprise app with passcode unlock, personalized greeting, gift reveal flow (love letter, polaroid memories, reasons I love you), and playful animated interactions.",
+  "features": [
+    "Passcode-protected unlock screen with couple photo and teddy",
+    "Happy birthday message page with custom photo upload",
+    "Readiness gate with funny rejection (angry teddy) if 'No' is pressed",
+    "Three selectable gift reveals: Love Letter, Polaroid Memories, Reasons I Love You",
+    "Final 'Hope you enjoyed it my love' ending after all gifts opened",
+    "All content (text, photos, dates) customizable by the creator via admin panel"
+  ],
+  "category": "personal",
+  "tags": [
+    "birthday",
+    "romance",
+    "surprise",
+    "gift",
+    "love",
+    "personal"
+  ],
+  "last_updated": "2026-05-05T15:25:24.840Z"
+}

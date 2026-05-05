@@ -1,0 +1,16 @@
+// Version: 1.0.0
+type PolaroidMemory__22179262 =
+  {caption : Text; dateLabel : Text; photoKey : Text};
+actor {
+  stable config :
+    {
+      var birthdayPhotoKey : Text;
+      var boyfriendName : Text;
+      var couplephotoKey : Text;
+      var loveMessage : Text;
+      var passcode : Text
+    };
+  stable loveLetter : {var text : Text};
+  stable polaroidMemories : {var memories : [PolaroidMemory__22179262]};
+  stable reasonsILoveYou : {var reasons : [Text]}
+};
